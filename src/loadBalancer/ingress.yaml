@@ -1,0 +1,8 @@
+upstream:
+  service1: 
+    protocol: http
+    host: localhost
+    ports: []
+
+endpoints:
+  "*": service1

@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "loadBalancer",
+      "type": "shell",
+      "command": "npm run loadBalancer",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "services"
+      }
+    },
+    {
+      "label": "webSocketChat",
+      "dependsOn": [
+        "wsApi",
+        "wsWebServer",
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "wsApi",
+      "type": "shell",
+      "command": "npm run wsService2",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "services"
+      }
+    },
+    {
+      "label": "wsWebServer",
+      "type": "shell",
+      "command": "npm run wsWebServer",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "services"
+      }
+    },
+  ]
+}
