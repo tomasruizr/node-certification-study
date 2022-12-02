@@ -1,3 +1,8 @@
+# Playground to study NodeJS fun stuff.
+Run to install dependencies
+
+`npm i` 
+
 # 2 different exercices
 
 ## LoadBalancer
